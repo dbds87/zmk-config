@@ -32,13 +32,19 @@
 
         combo_z {
             bindings = <&kp Z>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
             layers = <0>;
         };
 
         combo_q {
             bindings = <&kp Q>;
             key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        comb_enter {
+            bindings = <&kp ENTER>;
+            key-positions = <13 16>;
             layers = <0>;
         };
     };
@@ -54,7 +60,7 @@
             bindings = <
 &mo 2      &kp W  &kp F      &kp P        &kp B  &kp J            &kp L  &kp U           &kp Y    &lt 2 SEMICOLON
 &kp A      &kp R  &kp S      &kp T        &kp G  &kp K            &kp N  &kp E           &kp I    &kp O
-&sk LSHFT  &kp X  &kp C      &kp D        &kp V  &kp M            &kp H  &kp COMMA       &kp DOT  &none
+&sk LSHFT  &kp X  &kp C      &kp D        &kp V  &kp M            &kp H  &kp COMMA       &kp DOT  &sk LSHIFT
 &none             &sk LCTRL  &lt 1 SPACE  &none  &lt 1 BACKSPACE         &mt LALT ENTER           &none
             >;
         };
@@ -79,10 +85,10 @@
 
         bt_layer {
             bindings = <
-&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &bootloader   &trans        &trans  &trans  &trans  &trans  &trans
-&trans  &trans          &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans
-&trans                  &trans        &trans        &trans        &trans          &trans          &trans
+&trans  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans  &trans      &trans  &trans  &trans
+&trans  &trans          &trans        &bootloader   &trans        &trans  &sys_reset  &trans  &trans  &trans
+&trans  &trans          &trans        &trans        &trans        &trans  &trans      &trans  &trans  &trans
+&trans                  &trans        &trans        &trans        &trans              &trans          &trans
             >;
         };
     };
